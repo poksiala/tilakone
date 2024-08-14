@@ -17,7 +17,6 @@ def get_state_chart():
             }
         },
         "red": {
-            "initial": False,
             "on": {
                 "toggle": "green"
             }

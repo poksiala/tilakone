@@ -1,12 +1,12 @@
-from typing import Dict, Generic, TypedDict, TypeVar, TypeAlias
+from typing import Dict, Generic, TypedDict, TypeVar, NotRequired
 
 E = TypeVar('E')
 T = TypeVar('T')
 
 
 class StateDict(TypedDict, Generic[T, E]):
-    on: Dict[E, T] | None
-    initial: bool | None
+    on: NotRequired[Dict[E, T]]
+    initial: NotRequired[bool]
 
 
 class StateChart(Dict[T, StateDict[T, E]], Generic[T, E]):
