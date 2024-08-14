@@ -17,7 +17,6 @@ state_chart = StateChart[States, Events]({
         }
     },
     "ON": {
-        "initial": False,
         "on": {
             "toggle": "OFF",
             "turn_off": "OFF"
